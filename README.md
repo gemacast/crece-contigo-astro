@@ -1,67 +1,76 @@
 # 🌱 Crece Contigo - Proyecto con Astro
 
-Práctica de DAW.
-Se trata de una **web sencilla eligiendo el tema de crecimiento personal**, construida con **Astro**
+Práctica del módulo de Desarrollo de Aplicaciones Web (DAW).
 
----
+Este proyecto es una web sencilla orientada al crecimiento personal, desarrollada utilizando el framework Astro.
 
 ## ✅ Tecnologías utilizadas
 
-- [Astro](https://astro.build/) – Framework moderno para sitios rápidos
-- HTML5
-- [Bootstrap 5](https://getbootstrap.com/) – Framework CSS
-- [Font Awesome](https://fontawesome.com/) – Iconos
-- (Futuro) React – Componentes interactivos
+- Astro – Framework moderno para sitios web rápidos
+- HTML
+- Bootstrap 5 – Framework CSS para diseño responsive
+- Font Awesome – Iconos vectoriales
+- React (futura integración)
 
----
+## 📋 Requisitos previos
+Antes de comenzar, tener instalado lo siguiente:
+
+- Node.js (versión LTS recomendada)
+- npm (viene con Node.js)
+- Editor de código como Visual Studio Code
+- Git (opcional, si usas control de versiones)
+
 
 ## 🔧 Instalación paso a paso
 
-### 1. Instalar Node.js y npm
-
-- Descargar desde: [https://nodejs.org](https://nodejs.org)
-- Instalar la versión **LTS (recomendada)**
+1. Instalar Node.js y npm
+- Descargar desde: https://nodejs.org
+- Instalar la versión LTS (recomendada)
 - Verificar instalación:
-  ```bash
-  node -v
-  npm -v
+```bash
+node -v
+npm -v
+```
 
-## 🚀 Crear el proyecto con Astro
-
-Desde la terminal:
-
+2. Crear el proyecto con Astro
 ```bash
 npm create astro@latest
-Seleccionar plantilla: Minimal
-Introducir nombre o ruta del proyecto:
-Ejemplo: C:\xampp\htdocs\Practica_astro
+```
 
-📦 Instalar dependencias
-bash
-Copiar
-Editar
+- Seleccionar la plantilla: Minimal
+- Introducir el nombre o la ruta del proyecto: C:\xampp\htdocs\Practica_astro
+
+## 📦 Dependencias e inicio del proyecto
+### Instalar dependencias
+```bash
 npm install
-▶️ Iniciar el servidor de desarrollo
-bash
-Copiar
-Editar
+```
+4. Iniciar el servidor de desarrollo
+```bash
 npm run dev
-Navegar a:
-http://localhost:4321
-(Si el puerto está ocupado, puede usar otro como 4322)
+```
 
-🛠️ Solución a problemas comunes
-Error: ejecución de scripts deshabilitada (PowerShell)
-powershell
-Copiar
-Editar
+
+- Abre en tu navegador: [http://localhost:4322](http://localhost:4322)  
+  *(Si el puerto 4321 está ocupado, Astro usa otro como el 4322)*
+
+
+## 🛠 Solución a problemas comunes
+
+### Error: Ejecución de scripts deshabilitada en PowerShell
+
+Si al ejecutar `npm` te aparece un error como este:
+
+```plaintext
+npm : No se puede cargar el archivo npm.ps1 porque la ejecución de scripts está deshabilitada.
+```
+
+Solución:
+
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-✅ Alternativa sin errores: usar CMD o Git Bash.
 
-📁 Estructura del proyecto
-plaintext
-Copiar
-Editar
+## 📁 Estructura del proyecto
+
 Practica_astro/
 ├── public/
 ├── src/
@@ -70,41 +79,59 @@ Practica_astro/
 ├── astro.config.mjs
 ├── package.json
 └── README.md
-🌐 Estructura del sitio web
-index.astro
-Header: Logo + navegación
 
-Banner principal: título, subtítulo, botón
+## 🌐 Estructura del sitio web
 
-Temas destacados: 3 columnas (Autoconocimiento, Bienestar, Metas)
+index.astro incluye:
 
-Frase inspiradora
+ - Header: Logo y menú de navegación.
+ - Banner principal: Título motivacional, subtítulo y botón de acción.
+ - Temas destacados: Sección con tres columnas (Autoconocimiento, Hábitos y Bienestar, Metas y Productividad).
+ - Frase inspiradora: Mensaje motivacional centrado.
+ - Footer: Derechos de autor, contacto, redes sociales y enlaces legales.
 
-Footer: derechos, contacto, enlaces legales
+## 📷 Recursos añadidos
 
-📷 Recursos añadidos
-Bootstrap CDN
+Bootstrap CDN:
 
-html
-Copiar
-Editar
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-Font Awesome CDN
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+```
+Font Awesome CDN:
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+```
 
-html
-Copiar
-Editar
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-🎯 Objetivos del proyecto
-Practicar estructura HTML semántica
+## 🎨 Mejoras de estilo implementadas
 
-Usar Bootstrap
+- Degradado de fondo en el banner principal para profundidad visual.
+- Imagen decorativa responsiva en el hero (lado derecho en escritorio, centrada en móvil).
+- Botón destacado con color diferenciado (`btn-success`) y texto guía inferior.
+- Cards con iconos ampliados (`fa-2xl`) y color (`text-primary`).
+- Separadores visuales (`<hr>`) y márgenes uniformes (`my-4`, `py-5`, etc.).
+- Accesibilidad: uso de `aria-label` en botones repetidos.
+- Semántica: inclusión de etiquetas `<article>` para los pilares.
+- Icono decorativo (`fa-quote-left`) en la sección de frase motivadora.
 
-Preparar para React
+## 📷 Recursos añadidos
 
-Web clara, modular y práctica
+**Bootstrap CDN:**
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+'''
 
-👩‍💻 Autor/a
-Nombre: Gemma Castells
-Módulo: Desarrollo de Aplicaciones Web (DAW)
-Fecha: Abril 2025
+
+## 🎯 Objetivos del proyecto
+
+- Practicar estructura HTML semántica.
+- Utilizar Bootstrap para un diseño responsive y moderno.
+- Preparar el proyecto para futura integración de React.
+- Crear una web modular, clara y orientada al usuario.
+- Aplicar buenas prácticas de desarrollo web.
+
+## 👩‍💻 Autor/a
+
+- Nombre: Gemma Castells
+- Módulo: Desarrollo de Aplicaciones Web (DAW)
+- Fecha: Abril 2025

@@ -1,0 +1,11 @@
+.nav-link{
+    color: #0d47a1!important;
+}
+.nav-link:hover{
+    color:white !important;
+    background: #1565c0;
+}
+
+.mb-custom{
+    margin-bottom: 5rem;
+}
