@@ -2,19 +2,33 @@
 import Layout from "../layouts/Layout.astro"
 ---
 <Layout>
-    <h1>Contacto</h1>
-    <p>Poner formulario de contacto.</p>
-    <form>
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" id="nombre" required />
-
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" required />
-
-      <label for="mensaje">Mensaje:</label>
-      <textarea name="mensaje" id="mensaje" required></textarea>
+  <section class="container my-5">
+    <h1 class="mb-4">Contacto</h1>
+    <p class="mb-4">¿Tienes dudas o sugerencias? Rellena el siguiente formulario</p>
+    
+    <form class="row g-3">
       
-      <button type="submit">Enviar</button>
+      <div class="col-12 col-md-6">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" name="nombre" id="nombre" required />
+      </div>
+      
+      <div class="col-12 col-md-6">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" name="email" id="email" required />
+      </div>
+      
+      <div class="col-12">
+        <label for="mensaje" class="form-label">Mensaje:</label>
+        <textarea name="mensaje" class="form-control" id="mensaje" rows="5" required></textarea>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>  
     </form>
-    <a href="/">Volver a Inicio</a>
+    <div class="mt-4">
+      <a href="/" class="btn btn-outline-secondary">Volver a Inicio</a>
+    </div>
+  </section>  
 </Layout>
