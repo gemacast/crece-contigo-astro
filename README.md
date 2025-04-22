@@ -122,6 +122,11 @@ Font Awesome CDN:
 '''
 
 
+🔗 **Web publicada:**  
+https://crece-contigo-astro.vercel.app
+
+Web sencilla orientada al crecimiento personal, desarrollada utilizando el framework Astro.
+
 ## 🎯 Objetivos del proyecto
 
 - Practicar estructura HTML semántica.
